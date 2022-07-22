@@ -1,5 +1,5 @@
 name: Cypress Workshop CI
-on: [pull-request]
+on: [pull_request]
 
 jobs:
   run-e2e:
