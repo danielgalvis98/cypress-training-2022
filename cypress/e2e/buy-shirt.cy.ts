@@ -20,13 +20,14 @@ describe("Buy a t-shirt", () => {
   it("then the t-shirt should be bought", () => {
     menuContentPage.visitMenuContentPage();
     menuContentPage.goToTShirtMenu();
+    
     productsListPage.addToCart();
     productsListPage.proceedToCheckout();
     shoppingCartPage.proceedToCheckout();
 
     loginPage.login("aperdomobo@gmail.com", "WorkshopProtractor");
-
     addressStepPage.proceedToCheckout();
+    
     shippingStepPage.agreeTermsOfService();
     shippingStepPage.proceedToCheckout();
 
