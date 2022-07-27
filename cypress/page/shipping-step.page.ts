@@ -4,7 +4,7 @@ class ShippingStepPage {
 
   constructor() {
     this.agreeTermsOfServiceBox = "#cgv";
-    this.proceedToCheckoutButton = ".cart_navigation > .button";
+    this.proceedToCheckoutButton = "[name='processCarrier']";
   }
 
   public agreeTermsOfService(): void {
